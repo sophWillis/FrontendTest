@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Hello!</title>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SophieWillis - FrontendTest</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="images/github-logo.png">
 </head>
+
 <body>
 
-<h1>Hello!</h1>
+    <div id="background-wrap">
+        <div class="x1">
+            <img class="git" src="images/github-logo.png">
+        </div>
+
+        <div class="x2">
+            <img class="git" src="images/github-logo.png">
+        </div>
+
+        <div class="x3">
+            <img class="git" src="images/github-logo.png">
+        </div>
+
+        <div class="x4">
+            <img class="git" src="images/github-logo.png">
+        </div>
+
+        <div class="x5">
+            <img class="git" src="images/github-logo.png">
+        </div>
+    </div>
+
+    <div class="page">
+        <div id="mainDiv" class="main-div">
+            <button id="btnRefresh" class="hidden refresh" onClick="window.location.reload()"><img src="images/cancel.png" alt=""></button>
+            <div id="searchDisplay" class="input-container">
+                <input id="inputSearch" type="text" placeholder="Search user...">
+                <div>
+                    <button id="btnSearch">Search</button>
+                </div>
+            </div>
+            <div id="nameDisplay" class="hidden profile-container">
+                <div id="picFrame" class="profilepic">
+                </div>
+                <div>
+                    <div id="info">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="tableDisplay" class="hidden">
+                <table class="table">
+                    <th></th>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="errorDisplay" class="hidden error-message">
+                <div>User Not Found.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+
 </body>
+
 </html>
